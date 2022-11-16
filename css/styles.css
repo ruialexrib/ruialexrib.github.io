@@ -11,6 +11,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+@font-face {
+    font-family: 'Regular-RegularWEB';
+    src: url('../assets/fonts/Regular-RegularWEB.woff') format('woff');
+}
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -42,8 +47,8 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-    --bs-primary-rgb: 47, 53, 58;
-    --bs-secondary-rgb: 108, 117, 125;
+    --bs-primary-rgb: 36, 62, 139;
+    --bs-secondary-rgb: 0, 0, 0;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;
     --bs-warning-rgb: 255, 193, 7;
@@ -52,20 +57,20 @@
     --bs-dark-rgb: 33, 37, 41;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
-    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-color-rgb: 255, 255, 255;
     --bs-body-bg-rgb: 255, 255, 255;
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: Segoe UI, Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    --bs-body-font-size: 1rem;
+    --bs-body-font-family: Calibri, Roboto, Arial;
+    --bs-body-font-size: 1.2rem;
     --bs-body-font-weight: 400;
-    --bs-body-line-height: 1.5;
-    --bs-body-color: #212529;
+    --bs-body-line-height: 1.7;
+    --bs-body-color: #000;
     --bs-body-bg: #fff;
-    --bs-a-color-rgb: 47, 53, 58;
+    --bs-a-color-rgb: 36, 62, 139;
     --bs-a-hover-color: #000;
-    --bs-h-color-rgb: 47, 53, 58;
+    --bs-h-color-rgb: 0, 0, 0;
+    --bs-h-color2-rgb: 36, 62, 139;
 }
 
 *,
@@ -91,11 +96,12 @@ body {
     background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition-delay: 2s;
 }
 
 hr {
     margin: 1rem 0;
-    color: inherit;
+    color: #243e8b;
     background-color: currentColor;
     border: 0;
     opacity: 0.25;
@@ -108,29 +114,33 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 700;
+    font-family: var(--bs-body-font-family);
+    font-weight: 900;
     line-height: 1.2;
     color: rgb(var(--bs-h-color-rgb));
 }
 
 h1, .h1 {
     font-size: calc(1.725rem + 5.7vw);
+    color: rgb(var(--bs-h-color2-rgb));
 }
 
 @media (min-width: 1200px) {
     h1, .h1 {
         font-size: 6rem;
+        color: rgb(var(--bs-h-color2-rgb));
     }
 }
 
 h2, .h2 {
     font-size: calc(1.475rem + 2.7vw);
+    color: rgb(var(--bs-h-color2-rgb));
 }
 
 @media (min-width: 1200px) {
     h2, .h2 {
         font-size: 3.5rem;
+        color: rgb(var(--bs-h-color2-rgb));
     }
 }
 
@@ -4866,7 +4876,7 @@ textarea.form-control-lg {
     }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 1);
 }
 
     .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -11921,7 +11931,6 @@ textarea.form-control-lg {
 
 body {
     padding-top: 3.375rem;
-    color: #6c757d;
 }
 
 @media (min-width: 992px) {
@@ -12030,7 +12039,7 @@ p.lead {
     justify-content: center;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: #495057;
+    background-color: #243e8b;
     color: #fff;
     border-radius: 100%;
     font-size: 1.5rem;
