@@ -12,7 +12,16 @@ The project uses plain HTML, CSS, and JavaScript, includes Portuguese and Englis
 
 ## Update the blog
 
-Edit `blog/index.html`, duplicate an existing `post-card`, and update its date, category, title, description, and external link.
+The blog is a static collection of cards linking to articles published on external platforms such as LinkedIn.
+
+When adding an article:
+
+1. Duplicate an existing `post-card` in `blog/index.html`.
+2. Update the date, category, title, short description, and external URL.
+3. Add the translated card to `en/blog/index.html`.
+4. Keep the newest article at the top of both pages.
+
+The full article remains on the external platform; the website only displays its summary and a **Read more** link.
 
 ## Publish
 
