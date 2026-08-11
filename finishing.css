@@ -12,4 +12,7 @@ footer p{margin:0;color:#e8e0f0}
 .contact .button-light{background:#c084fc;color:#171126}
 .contact .button-outline{border-color:rgba(255,255,255,.45);color:#fff}
 .section-label{font-size:15px;font-weight:600;line-height:1.5}
+.personal-motto{max-width:640px;margin:34px 0 10px;padding:5px 0 5px 24px;border-left:2px solid #c084fc}
+.personal-motto p{margin:0;color:#33263f;font:500 clamp(19px,2vw,24px)/1.5 Manrope,sans-serif;letter-spacing:-.02em}
+.personal-motto cite{display:block;margin-top:9px;color:var(--muted);font-size:13px;font-style:normal;letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:560px){.section-label{font-size:14px}}
