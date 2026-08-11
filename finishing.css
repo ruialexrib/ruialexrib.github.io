@@ -3,6 +3,12 @@ footer{justify-content:center;text-align:center}
 footer p{margin:0;color:#e8e0f0}
 footer p a{color:#c084fc;border-bottom:1px solid rgba(192,132,252,.5);padding-bottom:2px}
 footer p a:hover{color:#eadcf8;border-bottom-color:#eadcf8}
+.support{border-top:1px solid var(--line)}
+.support-card{position:relative;overflow:hidden;padding:52px;background:#efe8f5;border:1px solid var(--line)}
+.support-card:after{content:"";position:absolute;width:260px;height:260px;right:-100px;top:-130px;border:1px solid rgba(192,132,252,.38);border-radius:50%}
+.support-card h2{position:relative;z-index:1;max-width:700px;font-size:clamp(38px,4vw,58px);line-height:1.08;margin:0 0 24px}
+.support-card p{position:relative;z-index:1;max-width:700px;color:var(--muted);font-size:17px;line-height:1.7}
+.support-button{position:relative;z-index:1;margin-top:18px;background:#171126;color:#fff}
 .contact{position:relative;overflow:hidden;background:#0d0b1f;color:#fff}
 .contact:before{content:"";position:absolute;width:620px;height:620px;right:-160px;top:-260px;border-radius:50%;background:radial-gradient(circle,rgba(123,63,190,.3),transparent 66%)}
 .contact:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(192,132,252,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(192,132,252,.04) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
@@ -14,4 +20,4 @@ footer p a:hover{color:#eadcf8;border-bottom-color:#eadcf8}
 .contact .button-light{background:#c084fc;color:#171126}
 .contact .button-outline{border-color:rgba(255,255,255,.45);color:#fff}
 .section-label{font-size:15px;font-weight:600;line-height:1.5}
-@media(max-width:560px){.section-label{font-size:14px}}
+@media(max-width:560px){.section-label{font-size:14px}.support-card{padding:30px 24px}.support-card h2{font-size:36px}.support-button{width:100%;padding-left:14px;padding-right:14px}}
