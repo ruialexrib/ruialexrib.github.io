@@ -28,3 +28,9 @@ The full article remains on the external platform; the website only displays its
 Push the files to the `main` branch and enable GitHub Pages from the repository root.
 
 [View the website](https://ruialexrib.github.io)
+
+## License
+
+The website's HTML, CSS, and JavaScript source code is available under the [MIT License](LICENSE).
+
+Personal and biographical content, article material, publications, visual identity, the RR monogram, favicon, and image assets are © 2026 Rui Ribeiro. All rights reserved. See the license file for details.
